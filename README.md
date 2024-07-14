@@ -1,30 +1,15 @@
-# React + TypeScript + Vite
+# Rock Paper Scissors Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple Rock Paper Scissors game built with React and Tailwind CSS. The game allows you to play against the computer, keeps track of the score, and includes options to reset the game and the score.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Play Against the Computer**: Choose between rock, paper, and scissors, and the computer will randomly select one as well.
+- **Score Tracking**: Your score is tracked and displayed. Winning a round increases your score by 1, losing a round decreases it by 1, and a draw leaves it unchanged.
+- **Reset Game**: You can reset the game to start a new round without changing the score.
+- **Reset Score**: You can reset the score back to 0.
+- **Styled Components**: Custom tooltips and animations enhance the user experience.
 
-## Expanding the ESLint configuration
+## Live Demo
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Check out the live demo: [Rock Paper Scissors](https://rock-paper-scissor-game-emc3.onrender.com)
