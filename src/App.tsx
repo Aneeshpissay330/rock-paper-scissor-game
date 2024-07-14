@@ -11,6 +11,9 @@ const App = () => {
           </linearGradient>
         </svg>
       <Game />
+      <p className="developer">
+        Developed by 🧑‍💻 <span>Aneesh Pissay</span>
+      </p>
     </div>
   )
 }
