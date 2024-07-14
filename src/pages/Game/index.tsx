@@ -62,32 +62,38 @@ const Game = () => {
       </div>
       {turn === "computer" ?
         <div className="flex justify-center items-center h-96">
-          {userChoice === "rock" ?
-            <div className="p-10 border-[#FFA500] border-[12px] rounded-full mx-20 bg-white inner-shadow">
-              <FaHandRock className="w-12 h-12 fill-[url(#blue-gradient)]" />
-            </div> : userChoice === "paper" ?
+          <div className="flex flex-col items-center justify-center">
+            <div className="font-semibold mb-3 uppercase">You Picked</div>
+            {userChoice === "rock" ?
               <div className="p-10 border-[#FFA500] border-[12px] rounded-full mx-20 bg-white inner-shadow">
-                <FaHandPaper className="w-12 h-12 fill-[url(#blue-gradient)]" />
-              </div> : userChoice === "scissors" &&
-              <div className="p-10 border-[#FFA500] border-[12px] rounded-full mx-20 bg-white inner-shadow">
-                <FaHandScissors className="w-12 h-12 fill-[url(#blue-gradient)]" />
-              </div>
-          }
+                <FaHandRock className="w-12 h-12 fill-[url(#blue-gradient)]" />
+              </div> : userChoice === "paper" ?
+                <div className="p-10 border-[#FFA500] border-[12px] rounded-full mx-20 bg-white inner-shadow">
+                  <FaHandPaper className="w-12 h-12 fill-[url(#blue-gradient)]" />
+                </div> : userChoice === "scissors" &&
+                <div className="p-10 border-[#FFA500] border-[12px] rounded-full mx-20 bg-white inner-shadow">
+                  <FaHandScissors className="w-12 h-12 fill-[url(#blue-gradient)]" />
+                </div>
+            }
+          </div>
           <div className="flex items-center flex-col">
             <div className="text-4xl">{result}</div>
             <button onClick={resetGame} className="px-5 py-2 mt-5 bg-white text-[#FFA500] font-semibold rounded-md">Play Again</button>
           </div>
-          {computerChoice === "rock" ?
-            <div className="p-10 border-[#FFA500] border-[12px] rounded-full mx-20 bg-white inner-shadow">
-              <FaHandRock className="w-12 h-12 fill-[url(#blue-gradient)]" />
-            </div> : computerChoice === "paper" ?
+          <div className="flex flex-col items-center justify-center">
+            <div className="font-semibold mb-3 uppercase">Computer Picked</div>
+            {computerChoice === "rock" ?
               <div className="p-10 border-[#FFA500] border-[12px] rounded-full mx-20 bg-white inner-shadow">
-                <FaHandPaper className="w-12 h-12 fill-[url(#blue-gradient)]" />
-              </div> : computerChoice === "scissors" &&
-              <div className="p-10 border-[#FFA500] border-[12px] rounded-full mx-20 bg-white inner-shadow">
-                <FaHandScissors className="w-12 h-12 fill-[url(#blue-gradient)]" />
-              </div>
-          }
+                <FaHandRock className="w-12 h-12 fill-[url(#blue-gradient)]" />
+              </div> : computerChoice === "paper" ?
+                <div className="p-10 border-[#FFA500] border-[12px] rounded-full mx-20 bg-white inner-shadow">
+                  <FaHandPaper className="w-12 h-12 fill-[url(#blue-gradient)]" />
+                </div> : computerChoice === "scissors" &&
+                <div className="p-10 border-[#FFA500] border-[12px] rounded-full mx-20 bg-white inner-shadow">
+                  <FaHandScissors className="w-12 h-12 fill-[url(#blue-gradient)]" />
+                </div>
+            }
+          </div>
         </div>
         :
         <div className="text-center">
